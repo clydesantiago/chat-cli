@@ -2,7 +2,7 @@
 
 Execute a command based on the natural language input.
 
-![](https://github.com/clydesantiago/chat-cli/demo.gif)
+![](https://github.com/clydesantiago/chat-cli/blob/main/demo.gif)
 
 ## Run Locally
 
