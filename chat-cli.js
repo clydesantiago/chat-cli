@@ -1,13 +1,14 @@
-require("dotenv").config();
-
 const { LLMChain, SimpleSequentialChain } = require("langchain/chains");
 const { OpenAI } = require("langchain/llms/openai");
 const { PromptTemplate } = require("langchain/prompts");
 const { Command } = require("commander");
 const { StructuredOutputParser } = require("langchain/output_parsers");
+const path = require("path");
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 const program = new Command();
+
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 
 program
   .name("chat-cli")
